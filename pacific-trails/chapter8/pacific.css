@@ -88,8 +88,6 @@ h2 {
     color: #3399cc;
     font-family: Georgia, 'Times New Roman', sans-serif;
     text-shadow: 1px 1px #cccccc;
-    grid-row: 1 / 2; 
-    grid-column: 1 / 5;
 }
 
 h3 {
@@ -114,12 +112,6 @@ footer {
 
 dt {
     color: #000033;
-}
-
-.content main {
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: 1fr 1fr 1fr;
 }
 
 #homehero {
@@ -157,16 +149,6 @@ dt {
     background-color: #90c7e3;
 }
 
-section {
-    grid-row: 2 / 3;
-    grid-column: auto;
-}
-
-#special {
-    grid-row: auto;
-    grid-column: 1 / 5;
-}
-
 @media (min-width: 600px) {
     nav ul {
         display: flex;
@@ -183,6 +165,27 @@ section {
         padding-right: 2em;
         grid-row: 2 / 3;
         grid-column: auto;
+    }
+
+    section {
+        grid-row: 2 / 3;
+        grid-column: auto;
+    }
+    
+    #special {
+        grid-row: auto;
+        grid-column: 1 / 5;
+    }
+
+    .content main {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    h2 {
+        grid-row: 1 / 2; 
+        grid-column: 1 / 5;
     }
 }
 
