@@ -1,10 +1,10 @@
-chapter exercises:
+chapter-exercises:
 http://web-students.pstcc.edu/web1600w01/grjohnson2/chapter-exercises/chapter9/9.1/index.html
 http://web-students.pstcc.edu/web1600w01/grjohnson2/chapter-exercises/chapter9/9.2/index.html
 http://web-students.pstcc.edu/web1600w01/grjohnson2/chapter-exercises/chapter9/9.3/menu.html
 http://web-students.pstcc.edu/web1600w01/grjohnson2/chapter-exercises/chapter9/9.4/menu2.html
 
-pacific trails:
+pacific-trails:
 http://web-students.pstcc.edu/web1600w01/grjohnson2/pacific-trails/chapter9/index.html   
 http://web-students.pstcc.edu/web1600w01/grjohnson2/pacific-trails/chapter9/yurts.html
 http://web-students.pstcc.edu/web1600w01/grjohnson2/pacific-trails/chapter9/activities.html
