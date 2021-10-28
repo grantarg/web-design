@@ -149,6 +149,28 @@ dt {
     background-color: #90c7e3;
 }
 
+table {
+    border: 2px solid #3399cc;
+    border-collapse: collapse;
+}
+
+td, th {
+    padding: 0.5em;
+    border: 2px solid #3399cc;
+}
+
+td {
+    text-align: center;
+}
+
+.text {
+    text-align: left;
+}
+
+tr:nth-of-type(odd) {
+    background-color: #f5fafc;
+}
+
 @media (min-width: 600px) {
     nav ul {
         display: flex;
