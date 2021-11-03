@@ -9,28 +9,64 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!-- reference style sheets -->
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" defer href="css/style.css">
 
         <!-- reference fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
 
+        <!-- reference font awesome icons -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+
         <!-- reference required javascript files -->
         <script type="text/javascript" src="js/index.js"></script>
+
+        <!-- javascript dependency carousel  -->
+        <script>
+            var slideIndex = 1;
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {slideIndex = 1}    
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";  
+                dots[slideIndex-1].className += " active";
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+                showSlides(slideIndex);
+            }, false);
+        </script>
     </head>
 
     <body>
         <header>
-            <img class="logo" src="../images/logo.svg" alt="logo">
+            <h1 class="logo" onclick="location.replace('./index.html')">Johnson <br> Web Design</h1>
 
             <nav>
                 <ul class="nav_ank">
-                    <li><a href="index.html">Design</a></li>
-                    <li><a href="index.html">Hosting</a></li>
-                    <li><a href="index.html">Projects</a></li>
-                    <li><a href="index.html">Reviews</a></li>
-                    <li><a class="contact_form" href="#"><button>Contact Us</button></a></li>
+                    <li><a href="designs.html">Design</a></li>
+                    <li><a href="hosting.html">Hosting</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Reviews</a></li>
+                    <li class="contact_list"><a class="contact_form" href="#"><button>Contact Us</button></a></li>
                 </ul>
             </nav>
 
@@ -45,8 +81,117 @@
             </div>
         </header>
         
-        <div class="wrapper">
+        <div class="slideshow-container" onload="currentSlide(1)">
+            <div class="mySlides fade">
+                <img src="../images/img_lights_wide.jpg" style="width:100%">
+                <div class="text">Filler text 1</div>
+            </div>
             
+            <div class="mySlides fade">
+                <img src="../images/img_snow_wide.jpg" style="width:100%">
+                <div class="text">Filler text 2</div>
+            </div>
+            
+            <div class="mySlides fade">
+                <img src="../images/img_nature_wide.jpg" style="width:100%">
+                <div class="text">Filler text 3</div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+        <div class="wrapper">
+            <section>
+                <h1>Section 1</h1>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tincidunt mauris sit amet lacus placerat, ut tempus nulla hendrerit. Mauris mollis lacus eu bibendum placerat. Vestibulum posuere lobortis neque nec finibus. Mauris pellentesque nulla a lobortis suscipit. Morbi dignissim sed orci quis pharetra. Vivamus finibus venenatis velit vitae bibendum. Cras erat lorem, finibus non magna ac, tincidunt scelerisque felis. Maecenas sem magna, molestie non pharetra et, sollicitudin sed magna. Duis consectetur, dolor vitae bibendum interdum, sem dui viverra erat, et tristique metus dolor ut diam.</p>
+            </section>
+            <br>
+            <section>
+                <h1>Section 2</h1>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tincidunt mauris sit amet lacus placerat, ut tempus nulla hendrerit. Mauris mollis lacus eu bibendum placerat. Vestibulum posuere lobortis neque nec finibus. Mauris pellentesque nulla a lobortis suscipit. Morbi dignissim sed orci quis pharetra. Vivamus finibus venenatis velit vitae bibendum. Cras erat lorem, finibus non magna ac, tincidunt scelerisque felis. Maecenas sem magna, molestie non pharetra et, sollicitudin sed magna. Duis consectetur, dolor vitae bibendum interdum, sem dui viverra erat, et tristique metus dolor ut diam.</p>
+            </section>
+            <br>
+            <section>
+                <h1>Section 3</h1>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tincidunt mauris sit amet lacus placerat, ut tempus nulla hendrerit. Mauris mollis lacus eu bibendum placerat. Vestibulum posuere lobortis neque nec finibus. Mauris pellentesque nulla a lobortis suscipit. Morbi dignissim sed orci quis pharetra. Vivamus finibus venenatis velit vitae bibendum. Cras erat lorem, finibus non magna ac, tincidunt scelerisque felis. Maecenas sem magna, molestie non pharetra et, sollicitudin sed magna. Duis consectetur, dolor vitae bibendum interdum, sem dui viverra erat, et tristique metus dolor ut diam.</p>
+            </section>
+            <br>
+            <section>
+                <h1>Section 3</h1>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tincidunt mauris sit amet lacus placerat, ut tempus nulla hendrerit. Mauris mollis lacus eu bibendum placerat. Vestibulum posuere lobortis neque nec finibus. Mauris pellentesque nulla a lobortis suscipit. Morbi dignissim sed orci quis pharetra. Vivamus finibus venenatis velit vitae bibendum. Cras erat lorem, finibus non magna ac, tincidunt scelerisque felis. Maecenas sem magna, molestie non pharetra et, sollicitudin sed magna. Duis consectetur, dolor vitae bibendum interdum, sem dui viverra erat, et tristique metus dolor ut diam.</p>
+            </section>
+            <br>
+            <section>
+                <h1>Section 3</h1>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tincidunt mauris sit amet lacus placerat, ut tempus nulla hendrerit. Mauris mollis lacus eu bibendum placerat. Vestibulum posuere lobortis neque nec finibus. Mauris pellentesque nulla a lobortis suscipit. Morbi dignissim sed orci quis pharetra. Vivamus finibus venenatis velit vitae bibendum. Cras erat lorem, finibus non magna ac, tincidunt scelerisque felis. Maecenas sem magna, molestie non pharetra et, sollicitudin sed magna. Duis consectetur, dolor vitae bibendum interdum, sem dui viverra erat, et tristique metus dolor ut diam.</p>
+            </section>
+            <br>
+            <section>
+                <h1>Section 3</h1>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tincidunt mauris sit amet lacus placerat, ut tempus nulla hendrerit. Mauris mollis lacus eu bibendum placerat. Vestibulum posuere lobortis neque nec finibus. Mauris pellentesque nulla a lobortis suscipit. Morbi dignissim sed orci quis pharetra. Vivamus finibus venenatis velit vitae bibendum. Cras erat lorem, finibus non magna ac, tincidunt scelerisque felis. Maecenas sem magna, molestie non pharetra et, sollicitudin sed magna. Duis consectetur, dolor vitae bibendum interdum, sem dui viverra erat, et tristique metus dolor ut diam.</p>
+            </section>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="f-col">
+                        <h4>Header 1</h4>
+
+                        <ul>
+                            <li><a href="#">One</a></li>
+                            <li><a href="#">Two</a></li>
+                            <li><a href="#">Three</a></li>
+                            <li><a href="#">Four</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="f-col">
+                        <h4>Header 2</h4>
+                        
+                        <ul>
+                            <li><a href="#">One</a></li>
+                            <li><a href="#">Two</a></li>
+                            <li><a href="#">Three</a></li>
+                            <li><a href="#">Four</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="f-col">
+                        <h4>Header 3</h4>
+                        
+                        <ul>
+                            <li><a href="#">One</a></li>
+                            <li><a href="#">Two</a></li>
+                            <li><a href="#">Three</a></li>
+                            <li><a href="#">Four</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="f-col">
+                        <h4>social</h4>
+                        
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>
