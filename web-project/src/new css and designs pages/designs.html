@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Designs</title>
+
+    <link rel="stylesheet" href="css/designs.css">
+
+    <!-- reference fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 class="logo">Johnson Web Design</h1>
+
+        <nav>
+            <ul class="nav_ank">
+                <li><a href="index.html">Design</a></li>
+                <li><a href="index.html">Hosting</a></li>
+                <li><a href="index.html">Projects</a></li>
+                <li><a href="index.html">Reviews</a></li>
+                <li class="contact_list"><a class="contact_form" href="#"><button>Contact Us</button></a></li>
+            </ul>
+        </nav>
+
+        <a class="contact_form_mobile" href="#">
+            <button>Contact Us</button>
+        </a>
+
+        <div class="burger" onclick="document.querySelector('.nav_ank').classList.toggle('active');">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </header>
+</body>
+</html>
