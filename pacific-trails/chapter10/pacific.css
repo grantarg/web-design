@@ -202,7 +202,7 @@ input, textarea {
         grid-row: 2 / 3;
         grid-column: auto;
     }
-    
+
     #special {
         grid-row: auto;
         grid-column: 1 / 5;
