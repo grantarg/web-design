@@ -49,16 +49,21 @@ nav li {
     border-bottom: 1px solid darkblue;
 }
 
+nav a {
+    transition-timing-function: ease-out;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #a52a2a;
+}
+
 nav a:link {
     color: #5c7fa3;
 }
 
 nav a:visited {
     color: #344873;
-}
-
-nav a:hover {
-    color: #a52a2a;
 }
 
 main {
@@ -69,10 +74,6 @@ main {
     padding-right: 20px;
     padding-bottom: 20px;
     display: block;
-}
-
-nav a {
-    text-decoration: none;
 }
 
 h1 {
@@ -178,6 +179,11 @@ form {
 
 input, textarea {
     margin-bottom: 0.5em;
+}
+
+video, embed {
+    float: right;
+    padding-left: 20px;
 }
 
 @media (min-width: 600px) {
