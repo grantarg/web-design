@@ -1,0 +1,14 @@
+chapter-exercises:
+http://web-students.pstcc.edu/web1600w01/grjohnson2/chapter-exercises/chapter12/12.1/index.html
+http://web-students.pstcc.edu/web1600w01/grjohnson2/chapter-exercises/chapter12/12.1/contact.html
+http://web-students.pstcc.edu/web1600w01/grjohnson2/chapter-exercises/chapter12/12.1/events/festival.html
+http://web-students.pstcc.edu/web1600w01/grjohnson2/chapter-exercises/chapter12/12.1/events/weekend.html
+http://web-students.pstcc.edu/web1600w01/grjohnson2/chapter-exercises/chapter12/12.1/rooms/canyon.html
+http://web-students.pstcc.edu/web1600w01/grjohnson2/chapter-exercises/chapter12/12.1/rooms/javelina.html
+http://web-students.pstcc.edu/web1600w01/grjohnson2/chapter-exercises/chapter12/12.1/rooms/juniper.html
+
+pacific-trails:
+http://web-students.pstcc.edu/web1600w01/grjohnson2/pacific-trails/chapter12/index.html
+http://web-students.pstcc.edu/web1600w01/grjohnson2/pacific-trails/chapter12/yurts.html
+http://web-students.pstcc.edu/web1600w01/grjohnson2/pacific-trails/chapter12/activities.html
+http://web-students.pstcc.edu/web1600w01/grjohnson2/pacific-trails/chapter12/reservations.html
