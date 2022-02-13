@@ -5,13 +5,16 @@ body {
 }
 
 header {
-    background-image: url(sunset.jpg);
-    background-repeat: no-repeat;
-    background-position: right;
     line-height: 400%;
     text-indent: 1em;
     background-color: #002171;
     color: #ffffff;
+}
+
+header h1 {
+    background-image: url(sunset.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
 }
 
 nav {

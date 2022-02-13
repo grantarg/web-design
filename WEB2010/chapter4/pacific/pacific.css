@@ -1,0 +1,47 @@
+body {
+    background-color: #ffffff;
+    color: #666666;
+    font-family: Verdana, Arial, sans-serif;
+}
+
+.wrapper {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+header {
+    background-color: #002171;
+    color: #ffffff;
+    font-family: Georgia, sans-serif;
+}
+
+header h1 {
+    line-height: 200%;
+}
+
+nav {
+    font-weight: bold;
+    background-color: #BBDEFB;
+}
+
+h2 {
+    color: #1976D2;
+    font-family: Georgia, sans-serif;
+}
+
+dt {
+    color: #002171;
+    font-weight: bold;
+}
+
+.resort {
+    color: #1976D2;
+    font-size: 1.2em;
+}
+
+footer {
+    font-size: .70em;
+    text-align: center;
+    font-style: italic;
+}
