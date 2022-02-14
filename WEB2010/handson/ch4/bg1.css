@@ -1,0 +1,9 @@
+body {
+    background-image: url(twocolor.gif);
+    background-repeat: repeat-y;
+    background-position: top left;
+}
+
+.padding {
+    padding: 0 3em;
+}
