@@ -1,0 +1,61 @@
+body {
+    background-color: #3f2860;
+    color: #40407A;
+    font-family: Verdana, Arial, sans-serif;
+}
+
+#wrapper {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1280px;
+    width: 80%;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-image: url(lilyheader.jpg);
+    background-position: right;
+    background-repeat: no-repeat;
+    height: 150px;
+    background-color: #80cbc4;
+}
+
+h1 {
+    padding-top: 50px;
+    padding-left: 2em;
+}
+
+nav {
+    padding: 1em;
+    text-align: center;
+    font-weight: bold;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+main {
+    padding: 0 2em;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#hero {
+    text-align: center;
+}
+
+.studio {
+    font-style: italic;
+}
+
+footer {
+    background-color: #80cbc4;
+    font-size: .60em;
+    padding: 1em;
+    text-align: center;
+    font-style: italic;
+}
