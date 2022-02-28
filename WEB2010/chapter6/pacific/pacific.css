@@ -1,53 +1,92 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
-    background-color: #90c7e3;
+    background-color: #EAEAEA;
     color: #666666;
-    background-image: linear-gradient(#ffffff, #90c7e3);
-    background-repeat: no-repeat;
     font-family: Verdana, Arial, sans-serif;
 }
 
 #wrapper {
     width: 80%;
-    background-color: #ffffff;
+    background-image: linear-gradient(#ffffff, #90c7e3);
     max-width: 2048px;
     box-shadow: 5px 5px 5px black;
     margin-right: auto;
     margin-left: auto;
+    min-width: 960px;
 }
 
 header {
     background-color: #002171;
     color: #ffffff;
     font-family: Georgia, sans-serif;
-    background-image: url(sunset.jpg);
-    background-position: right;
-    background-repeat: no-repeat;
-    height: 72px;
+    height: 120px;
 }
 
-header h1 {
+h1 {
     text-align: center;
     padding-top: .5em;
+    letter-spacing: 0.25em;
+    font-size: 3em;
+}
+
+h1 a {
+    text-decoration: none;
+    color: #ffffff;
 }
 
 nav {
-    padding: .5em .5em .5em 0;
+    padding: 0;
+    position: fixed;
     font-weight: bold;
-    text-align: center;
+    background-color: inherit;
+    float: left;
+    width: 160px;
+    font-size: 1.2em;
 }
 
 nav a {
     text-decoration: none;
 }
 
-main { 
+nav a:link {
+    color: #5c7fa3;
+}
+
+nav a:visited {
+    color: #344873;
+}
+
+nav a:hover {
+    color: #A52A2A;
+}
+
+nav ul { 
+    list-style-type: none;
+    padding-left: 1em;
+}
+
+main {
+    background-color: #ffffff;
+    margin-left: 170px;
+    overflow: auto;
     padding-left: 2em;
-    padding-left: 2em;
+    padding-right: 2em;
     display: block;
+}
+
+section {
+    float: left;
+    width: 33%;
+    padding-left: 2em;
+    padding-right: 2em;
 }
 
 #homehero {
     height: 300px;
+    margin-left: 170px;
     background-size: 100% 100%;
     background-image: url(coast.jpg);
     background-repeat: no-repeat;
@@ -55,6 +94,7 @@ main {
 
 #yurthero {
     height: 300px;
+    margin-left: 170px;
     background-size: 100% 100%;
     background-image: url(yurt.jpg);
     background-repeat: no-repeat;
@@ -62,6 +102,7 @@ main {
 
 #trailhero {
     height: 300px;
+    margin-left: 170px;
     background-size: 100% 100%;
     background-image: url(trail.jpg);
     background-repeat: no-repeat;
@@ -87,7 +128,10 @@ dt {
 }
 
 footer {
+    display: block;
     font-size: .70em;
+    margin-left: 170px;
+    background-color: #ffffff;
     padding: 1em;
     text-align: center;
     font-style: italic;
