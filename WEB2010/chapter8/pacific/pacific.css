@@ -135,6 +135,33 @@ footer {
     font-style: italic;
 }
 
+table {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    border: 1px solid #3399cc;
+    border-collapse: collapse;
+}
+
+th {
+    padding: 5px;
+    border: 1px solid #3399cc;
+}
+
+td {
+    padding: 5px;
+    border: 1px solid #3399cc;
+    text-align: center;
+}
+
+.text {
+    text-align: left;
+}
+
+tr:nth-of-type(even) {
+    background-color: #dfedf8;
+}
+
 @media all and (min-width: 600px) {
     h1 {
         font-size: 2em;
