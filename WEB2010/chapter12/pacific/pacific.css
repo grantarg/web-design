@@ -1,0 +1,284 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+    color: #666666;
+    margin: 0;
+    font-family: Verdana, Arial, sans-serif;
+}
+
+#wrapper {
+    background-color: #fff;
+}
+
+header {
+    background-color: #002171;
+    color: #ffffff;
+    padding: 1em;
+    font-family: Georgia, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+h1 a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+nav {
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    background-color: inherit;
+    font-size: 1.2em;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav a:link {
+    color: #5c7fa3;
+}
+
+nav a:visited {
+    color: #344873;
+}
+
+nav a:hover {
+    color: #A52A2A;
+}
+
+nav li {
+    padding: .5em 1em;
+    width: 100%;
+    border: 1px solid #5c7fa3;
+}
+
+nav ul { 
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+main {
+    padding: 0 1em;
+    display: block;
+}
+
+section {
+    padding-left: .5em;
+    padding-right: .5em;
+}
+
+#homehero {
+    height: 300px;
+    background-size: 200% 100%;
+    background-image: url(coast.jpg);
+    background-repeat: no-repeat;
+}
+
+#yurthero {
+    height: 300px;
+    background-size: 200% 100%;
+    background-image: url(yurt.jpg);
+    background-repeat: no-repeat;
+}
+
+#trailhero {
+    height: 300px;
+    background-size: 200% 100%;
+    background-image: url(trail.jpg);
+    background-repeat: no-repeat;
+}
+
+#shophero {
+    height: 300px;
+    background-size: 200% 100%;
+    background-image: url(psunset.jpg);
+    background-repeat: no-repeat;
+}
+
+h2 {
+    color: #1976D2;
+    font-family: Georgia, sans-serif;
+}
+
+h3 {
+    font-family: Georgia, sans-serif;
+}
+
+dt {
+    color: #002171;
+    font-weight: bold;
+}
+
+.resort {
+    color: #1976D2;
+    font-size: 1.2em;
+}
+
+#mobile {
+    display: inline;
+}
+
+#desktop {
+    display: none;
+}
+
+footer {
+    display: block;
+    font-size: .70em;
+    background-color: #ffffff;
+    padding: 1em;
+    text-align: center;
+    font-style: italic;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    border: 1px solid #3399cc;
+    border-collapse: collapse;
+}
+
+th {
+    padding: 5px;
+    border: 1px solid #3399cc;
+}
+
+td {
+    padding: 5px;
+    border: 1px solid #3399cc;
+    text-align: center;
+}
+
+.text {
+    text-align: left;
+}
+
+tr:nth-of-type(even) {
+    background-color: #dfedf8;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1em;
+    width: 80%;
+}
+
+input, textarea {
+    margin-bottom: 0.5em;
+}
+
+video {
+    float: right;
+    margin: 2em;
+}
+
+.shop {
+    margin: 1em;
+    background-color: #f4f4f4;
+}
+
+.shop img {
+    float: right;
+    padding: 1em;
+}
+
+.shop form {
+    clear: right;
+    padding-bottom: 10px;
+}
+
+@media all and (min-width: 600px) {
+    h1 {
+        font-size: 2em;
+        letter-spacing: .25em;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        padding-right: 2em;
+    }
+
+    nav li {
+        width: 12em;
+        border: none;
+    }
+
+    #flow {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #mobile {
+        display: none;
+    }
+
+    #desktop {
+        display: inline;
+    }
+
+    #homehero {
+        background-size: 100% 100%;
+    }
+    
+    #yurthero {
+        background-size: 100% 100%;
+    }
+    
+    #trailhero {
+        background-size: 100% 100%;
+    }
+
+    #shophero {
+        background-size: 100% 100%;
+    }
+
+    form {
+        width: 60%;
+        display: grid;
+        gap: 1em;
+        grid-template-rows: auto;
+        grid-template-columns: 10em 1fr;
+    }
+
+    label {
+        text-align: right;
+    }
+
+    #mySubmit {
+        width: 9em;
+        grid-column: 2 / 3;
+    }
+}
+
+@media all and (min-width: 1024px) {
+    body {
+        background-image: linear-gradient(to bottom, #ffffff 20%, #90c7e3 60%, #ffffff 100%);
+    }
+
+    nav ul {
+        padding-right: 10%;
+        padding-left: 10%;
+    }
+
+    #wrapper {
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+}
